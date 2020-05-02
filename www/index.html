@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+            <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        button{
+            padding: 0px 3px;
+            width: 10px;
+        }
+    </style>
+    <title>Document</title>
+    <script>
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+
+        }
+    </script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div style="padding: 15px">
+        
+
+
+    </div>
+<!-- Start of first page -->
+<div data-role="page" id="foo">
+
+    <div data-role="header">
+        <h1>Foo</h1>
+    </div><!-- /header -->
+    
+    <div role="main" class="ui-content">
+        <form action="index.html">
+            <label for="1">Vehicle Model</label>
+            <input name="1" type="text" id="1" required maxlength="10" pattern="^[A-Za-z0-9]+$">
+            <label for="2">Total Distance in KM</label>
+            <input name="2" type="number" id="2" min="500">
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="margin-right: 15px;">
+                    <label for="3">Date</label>
+                    <input name="3" type="date" id="3">
+                </div>
+                <div class="ui-block-b" style="width: 45%;">
+                    <label for="4">Time</label>
+                    <input name="4" type="time" id="4">
+                </div>
+            </div>
+            <label for="5">Total Price</label>
+            <input name="5" type="number" id="5">
+            <label for="6">Parts changed or repaired</label>
+            <input name="6" type="text" id="6">
+            <label for="7">Repair Shop</label>
+            <input name="7" type="text" id="7" required maxlength="40" pattern="^[A-Za-z0-9]+$">
+            <button type="submit">Submit</button>
+        </form>
+        <p><a href="#bar" class="ui-btn ui-shadow ui-corner-all">List</a></p>
+    </div><!-- /content -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+    <div data-role="header">
+        <h1>Bar</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <a href="./index.html">Back to home</a>
+        <input type="text" id="search">
+        <p id="test"></p>
+                <table border="1" id="display" style="width: 100%; overflow-x: auto;">
+                    <tr>
+                        <th>Vehicle Model</th>
+                        <th>Total Distance</th>
+                        <th>Date / Time</th>
+                        <th>Total Price</th>
+                        <th>Parts changed or repaired</th>
+                        <th>Repair Shop</th>
+                        <th>Action</th>
+                    </tr>
+                
+                </table>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+</body>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src='js/myscript.js'></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+
+</html>
+
