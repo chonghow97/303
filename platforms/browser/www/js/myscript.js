@@ -110,6 +110,7 @@ function Update(e) {
     updateVal(currentEle, value, id);
 }
 
+//idea form stackoverflow.com
 function updateVal(currentEle,value,id) {
     //add in input element
     $(currentEle).html(`<input type="text" class="thval" value="${value}" />`);
